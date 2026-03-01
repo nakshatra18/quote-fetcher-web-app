@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuoteFetcher</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="toggle-theme">
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div class="container">
+    <h1>Get Inspired</h1>
+    <div id="quote-box">
+      <p id="quote">Click the button to get a quote</p>
+      <p id="author"></p>
+    </div>
+    <div class="button-group">
+      <button onclick="getQuote()">🎲 New Quote</button>
+      <button onclick="copyQuote()">📋 Copy</button>
+      <button onclick="shareQuote()">📤 Share</button>
+    </div>
+    <div id="loader" class="loader" style="display:none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
